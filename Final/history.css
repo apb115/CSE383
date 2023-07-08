@@ -1,0 +1,23 @@
+body {
+	background-image: url("https://media.istockphoto.com/id/183954337/vector/detailed-orange-grunge-vector-background.jpg?b=1&s=612x612&w=0&k=20&c=_Q176ZZZ1MJ_ZaK4njXzoXPVj4RdOIQFuAzC_RzYhmc=");
+	background-size: cover;
+}
+
+#redir {
+	background-color: gray;
+	font-size: 30px;
+	color: white;
+	border: 3px solid black;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#formT {
+	font-weight: bold;
+}
+
+#head {
+	font-weight: bold;
+	text-align: center;
+	color: brown;
+}

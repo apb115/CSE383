@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+        CSE 383
+        Name: Andrew Boothe 
+        Assignment: Lab7
+        Description:use JavaScript to create page
+-->
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                <title>CSE 383</title>
+        </head>
+
+        <body>
+
+                	<script language="JavaScript">
+			document.write("<h1>Assignment: Lab7</h1>");
+			document.write("<h2>Name: Andrew Boothe</h2>"); 
+			document.write("<h3>");
+			document.write(new Date());
+			document.write("</h3>");
+			
+			document.write('<div id="div1"><button type="button" onClick="doRectangle();">Rectangle</button></div>');
+       			document.write('<div id="div2"><button type="button" onClick="doTime();">Time</button></div>&nbsp');
+        		document.write('<div id="div3"><button type="button" onClick="doCanvas();">Blue Square</button></div>');
+			</script>
+
+			<script language="JavaScript">
+			function doRectangle() {
+				let i = 0;
+				while (i<3) {
+					document.write('<div id="one"><img src="https://picsum.photos/100/150/?nonce=' + i + '"/></div>');
+					i++;
+				}
+			}
+			</script>
+
+			<script language="JavaScript">	
+			function doTime() {
+				alert(new Date());
+			}
+			</script>
+
+			<canvas id="myCanvas" width="400" height="400"></canvas>
+			<script language="JavaScript">
+			function doCanvas() {
+				var canvas = document.getElementById("myCanvas");
+     				 if (canvas.getContext) {
+        				var ctx = canvas.getContext('2d');
+        				ctx.fillStyle = "rgb(0,0,255)";
+        				ctx.fillRect(50, 300, 100, 100);
+				}
+			}
+			</script>
+        </body>
+</html>

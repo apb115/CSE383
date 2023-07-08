@@ -1,0 +1,48 @@
+body {
+	background-image: url("https://media.istockphoto.com/id/1337977426/photo/dark-gray-and-black-grunge-cement-wall-studio-room-space-product-background-template.jpg?b=1&s=170667a&w=0&k=20&c=4dVCV5KtJKEhuQtp5dbnFmwMBAzNknz35VUIa0C3KoE="); 
+	background-size: cover;
+}
+
+
+#text {
+	text-align: center;
+	color: #A9A9A9;
+}
+
+#textHead {
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+
+#textBody {
+	font-weight: bold;
+	text-align: center;
+	color: #A9A9A9;
+}
+
+#img1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#redir {
+	background-color: gray;
+	font-size: 30px;
+	color: white;
+	border: 3px solid black;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#nav1 {
+	font-size: 30px;
+	color: black;
+}
+
+#title1 {
+	text-align: center;
+	color: #A9A9A9;
+}

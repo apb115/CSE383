@@ -1,0 +1,35 @@
+body {
+	background-image: url("https://wallpaperaccess.com/full/2860359.jpg");
+	background-size: cover;
+}
+
+#redir {
+	background-color: gray;
+	font-size: 30px;
+	color: white;
+	border: 3px solid black;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#tHead {
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}	
+
+#text1 {
+	color: white;
+}
+
+.card-text {
+	color: white;
+}
+
+.card {
+	background-color: gray;
+}
+
+.card-title {
+	color: white;
+}

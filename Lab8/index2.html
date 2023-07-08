@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet">
+	<title>Andrew Boothe</title>
+	<meta charset = "UTF-8">
+</head>
+
+<body>
+	<script language="JavaScript">
+		function validateForm() {
+  			let x = document.getElementById("name1").value;
+  			if (x == "") {
+    				alert("Name must be filled out");
+    				return false;
+  			}
+			let a = /^[a-zA-Z ]{2,40}$/;
+                        if (!a.test(x)) {
+                                alert("Invalid name characters");
+                                return false;
+                        }
+
+			let y = document.getElementById("uid1").value;
+			if (y == "") {
+				alert("ID must be filled out");
+				return false;
+			}
+			let b = /^[a-zA-Z0-9]+$/;
+                        if (!b.test(y)) {
+                                alert("Invalid user ID characters");
+                                return false;
+                        }
+
+			let z = document.getElementById("mobile1").value;
+			if (z == "") {
+				alert("Mobile device number must be filled out");
+				return false;
+			}
+			let c = /^([1-9]|10)+$/;
+                        if (!c.test(z)) {
+                                alert("Invalid mobile device number characters");
+                                return false;
+                        }
+			let q = document.getElementById("quotation1")
+			if (q == "") {
+				alert("Quotation must be filled out");
+				return false;
+			}
+			let d = /^[a-zA-Z0-9 ]+$/;
+                        if (!d.test(q)) {
+                                alert("Invalid quote characters");
+                                return false;
+                        }
+	
+			return true;
+		}	
+	</script>
+	<form action="https://ceclnx01.cec.miamioh.edu/~johnsok9/cse383/lab8/lab8.php" onsubmit="return validateForm();" target="_blank" method="post">
+
+
+		<label for="name-f22" id="name2" class="one">Name:</label><br>
+		<input type="text" id="name1" name="name"><br>
+
+
+		<label for="uid-f22" class="one">User ID:</label><br>
+		<input type="text" id="uid1" name="uid"><br>
+
+
+		<label for="mobile-f22">Mobile Devices</label><br>
+		<input type="number" id="mobile1" name="numMobileDevices"><label></label><br>
+
+
+		<label for="quotation-f22" class="one">Quotation:</label><br>
+		<input type="text" id="quotaton1" name="quoteCite"><br>
+
+		<input type="submit" name="submit"  value="Submit"><br>
+
+
+</body>
+
+<footer>
+	<p>
+	Class: CSE383
+	Homework: Lab8
+	Date: 10/17/2022
+	</p>
+</footer>
+
+</html>

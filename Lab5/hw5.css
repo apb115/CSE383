@@ -1,0 +1,48 @@
+label.one {
+	font-weight: bold;
+	font-style: italic;
+	font-size: large;
+}
+
+div.row {
+	text-align: center;
+}
+
+div.col {
+
+
+}
+
+#t1, #t2, #t3 {
+	background-color: var(--bs-blue);
+	border: solid 2px black;
+}
+
+#th1, #th2 {
+	background-color: var(--bs-teal);
+	border: solid 2px black;
+}
+
+#f1, #f2 {
+	background-color: var(--bs-cyan);
+	border: solid 2px black;
+}
+
+#fi1, #fi2, #fi3 {
+	background-color: var(--bs-indigo);
+	border: solid 2px black;
+}
+ 
+#s1 {
+	background-color: var(--bs-purple);
+	border: solid 2px black;
+}
+
+img {
+	border-radius: 8px;
+	width: 190px;
+}
+
+url {
+	width: 400px;
+}

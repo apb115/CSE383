@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="weather.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <script src="weather.js?rev=1"></script>
+  </head>
+
+  <body>
+	<div class="row">
+		<nav id ="nav2">
+			<a id="redir" href="./landing.html">Homepage</a>
+			<a id="redir" href="./history.html">Search History</a>
+		</nav>
+		<br><br><br><br><br><br><br><br>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="d-flex justify-content-center text-center flex-column">
+				<h1 id="tHead">Welcome! Enter a location below to check your 5-day forecast.</h1>
+				<form>
+					<label for="location" id="text1">Location:</label>
+					<input type="text" id="location" name="location1">
+					<input type="button" value="Submit" onclick="returnCoords()">
+				</form>
+				<br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="card" style="width: 15rem;">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYCmo0XPMziyd78U81oT2lzbyFxpbSHZIRvA&usqp=CAU" class="card-img-top" alt="Weather Icon" id="day1">
+					<div class="card-body">
+						<h5 class="card-title" id="date1">Date:</h5>
+						<h6 class="card-text" id="hi1">High:</h6>
+						<h6 class="card-text" id="low1">Low:</h6>
+						<h6 class="card-text" id="forecast1">Forecast:</h6>
+						<h6 class="card-text" id="vis1">Visibility:</h6>
+						<h6 class="card-text" id="hum1">Humidity:</h6>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="card" style="width: 10rem;">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYCmo0XPMziyd78U81oT2lzbyFxpbSHZIRvA&usqp=CAU" class="card-img-top" alt="Weather Icon" id="day2">
+					<div class="card-body">
+						<h5 class="card-title" id="date2">Date:</h5>
+						<h6 class="card-text" id="hi2">High:</h6>
+						<h6 class="card-text" id="low2">Low:</h6>
+						<h6 class="card-text" id="forecast2">Forecast:</h6>
+						<h6 class="card-text" id="vis2">Visibility:</h6>
+						<h6 class="card-text" id="hum2">Humidity:</h6>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="card" style="width: 10rem;">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYCmo0XPMziyd78U81oT2lzbyFxpbSHZIRvA&usqp=CAU" class="card-img-top" alt="Weather Icon" id="day3">
+					<div class="card-body">
+						<h5 class="card-title" id="date3">Date:</h5>
+						<h6 class="card-text" id="hi3">High:</h6>
+						<h6 class="card-text" id="low3">Low:</h6>
+						<h6 class="card-text" id="forecast3">Forecast:</h6>
+						<h6 class="card-text" id="vis3">Visibility:</h6>
+						<h6 class="card-text" id="hum3">Humidity:</h6>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="card" style="width: 10rem;">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYCmo0XPMziyd78U81oT2lzbyFxpbSHZIRvA&usqp=CAU" class="card-img-top" alt="Weather Icon" id="day4">
+					<div class="card-body">
+						<h5 class="card-title" id="date4">Date:</h5>
+						<h6 class="card-text" id="hi4">High:</h6>
+						<h6 class="card-text" id="low4">Low:</h6>
+						<h6 class="card-text" id="forecast4">Forecast:</h6>
+						<h6 class="card-text" id="vis4">Visibility:</h6>
+						<h6 class="card-text" id="hum4">Humidity:</h6>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card" style="width: 15rem;">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYCmo0XPMziyd78U81oT2lzbyFxpbSHZIRvA&usqp=CAU" class="card-img-top" alt="Weather Icon" id="day5">
+					<div class="card-body">
+						<h5 class="card-title" id="date5">Date:</h5>
+						<h6 class="card-text" id="hi5">High:</h6>
+						<h6 class="card-text" id="low5">Low:</h6>
+						<h6 class="card-text" id="forecast5">Forecast:</h6>
+						<h6 class="card-text" id="vis5">Visibility:</h6>
+						<h6 class="card-text" id="hum5">Humidity:</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+
